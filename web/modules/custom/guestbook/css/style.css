@@ -1,0 +1,70 @@
+#suppernavbar {
+  background-color: rgb(238, 195, 103);
+}
+#navbar {
+  background-color: rgb(0, 0, 0);
+}
+.messages__wrapper .alert.alert-danger.alert-dismissible .item-list.item-list--messages .item.item--message {
+  display: none;
+}
+#vd-form,
+.table-responsive {
+  padding: 35px;
+  background: lightgrey;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.input-group {
+  width: 100%;
+}
+.page-header {
+  text-align: center;
+}
+.alert.alert-danger.alert-dismissible,
+.messages__wrapper {
+  display: none;
+}
+#form-system-messages {
+  display: none;
+}
+.col-md-3.offset-md-3 {
+  margin: 100px 100px 100px 150px;
+}
+.row.underline_vidguks {
+  background: lightgray;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding: 35px;
+}
+.ava-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 50px;
+}
+.ava-image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  border: black 1px solid;
+}
+.usr-name,
+.usr-submit,
+.usr-vidguk,
+.usr-email,
+.usr-nomer {
+  text-align: center;
+  margin: 20px 0;
+}
+.image-container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.image-container img {
+  height: 100%;
+  margin: 0 auto;
+}
+.contact-info {
+  margin-top: 40%;
+}

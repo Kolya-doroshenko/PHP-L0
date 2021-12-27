@@ -1,0 +1,35 @@
+{{ attach_library ('guestbook/guestbook-libraries') }}
+
+{{ form }}
+{% for item in items %}
+  <div class="row underline_vidguks">
+    <div class="col-lg-3">
+      <div class="ava-image">
+      {% if item.AVA %}
+        <img src="{{ item.AVA }}" alt="user profile image">
+      {% else %}
+        <img src="/modules/custom/guestbook/img/default-user-avatar-300x293.png" alt="user profile image">
+      {% endif %}
+      </div>
+      <p class="usr-name"><span>{{ 'Name:'|trans }} </span>{{ item.name }}</p>
+      <p class="usr-submit"><span>{{ 'Submitted:'|trans }} </span>{{ item.created }}</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="image-container">
+      {% if item.image %}
+        <img src="{{ item.image }}" alt="{{ item.image }}">
+      {% else %}
+      {% endif %}
+      </div>
+      <p class="usr-vidguk"><span>{{ 'Vidguk:'|trans }} </span>{{ item.vidguk }}</p>
+    </div>
+    <div class="col-lg-3">
+      <div class="contact-info">
+      <p class="usr-email"><span>{{ 'Email:'|trans }} </span>{{ item.mail }}</p>
+      <p class="usr-nomer"><span>{{ 'Nomer:'|trans }} </span>{{ item.nomer }}</p>
+      </div>
+    </div>
+
+
+  </div>
+{% endfor %}

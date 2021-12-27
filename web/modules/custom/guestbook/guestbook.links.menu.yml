@@ -1,0 +1,6 @@
+guestbookadmin.gb_page:
+  title: 'Vidguks list'
+  route_name: guestbookadmin.gb_page
+  description: 'Welcome message admin'
+  parent: system.admin_structure
+  weight: 99

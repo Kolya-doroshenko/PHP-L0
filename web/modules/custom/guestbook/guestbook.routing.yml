@@ -1,0 +1,30 @@
+guestbook.gb_page:
+  path: '/guestbook/gb'
+  defaults:
+    _controller: '\Drupal\guestbook\Controller\guestbookController::report'
+    _title: 'Hello! You can add here your vidguk.'
+  requirements:
+    _permission: 'access content'
+
+guestbook.gb_delete_page:
+  path: '/guestbook/gbDel/{cid}'
+  defaults:
+    _form: '\Drupal\guestbook\Form\GbDeleteForm'
+    _title: 'Remove or not remove?'
+  requirements:
+    _permission: 'administer nodes'
+
+guestbook.gb_edit_page:
+  path: '/admin/guestbook/gbChange/{cid}'
+  defaults:
+    _form: '\Drupal\guestbook\Form\GbChangeForm'
+    _title: 'You can edit vidguk here.'
+  requirements:
+    _permission: 'administer nodes'
+
+guestbookadmin.gb_page:
+  path: '/admin/structure/gb'
+  defaults:
+    _form: '\Drupal\guestbook\Form\GbadminForm'
+  requirements:
+    _permission: 'administer nodes'

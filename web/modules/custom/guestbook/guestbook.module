@@ -1,0 +1,20 @@
+<?php
+
+/*
+ * @file
+ * implementation our hook
+ *
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * Implements hook_theme().
+ */
+
+function guestbook_theme($existing, $type, $theme, $path) {
+  return [
+    'gb_template' => [
+      'variables' => ['form' => [], 'items' => [], 'delete' => [], 'edit',],
+    ],
+  ];
+}

@@ -1,0 +1,68 @@
+<?php
+function guestbook_schema() {
+  $schema['guestbook'] = array(
+    'description' => 'Vidguks',
+    'fields' => array(
+      'id' => array(
+        'description' => 'The primary identifier for the vidguk.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'uid' => array(
+        'description' => 'The {users}.uid that added this vidguk',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'name' => array(
+        'description' => "User name.",
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'mail' => array(
+        'description' => "User email address.",
+        'type' => 'varchar',
+        'length' => 100,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'nomer' => array(
+        'description' => "User nomer.",
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'vidguk' => array(
+        'description' => "User vidguk.",
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+      'AVA' => array(
+         'description' => "User Ava.",
+         'type' => 'int',
+         'not null' => TRUE,
+         'default' => 0,
+      ),
+      'image' => array(
+        'description' => "Vidguk picture.",
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'created' => array(
+        'description' => 'Timestamp when cat was submitted.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => FALSE,
+        'default' => '',
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}
